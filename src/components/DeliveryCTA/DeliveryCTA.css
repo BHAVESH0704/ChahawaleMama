@@ -1,0 +1,143 @@
+.delivery{
+    padding:120px 8%;
+    background:#24160F;
+}
+
+.delivery-content{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.delivery-badge{
+
+    display:inline-block;
+
+    background:rgba(255,255,255,.08);
+
+    color:#D89B3A;
+
+    padding:12px 24px;
+
+    border-radius:50px;
+
+    margin-bottom:30px;
+
+    font-weight:600;
+}
+
+.delivery h2{
+
+    font-size:clamp(3rem,6vw,4.8rem);
+
+    color:#FFF8EE;
+
+    line-height:1.15;
+
+    margin-bottom:25px;
+}
+
+.delivery p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:rgba(255,255,255,.82);
+
+    font-size:1.2rem;
+
+    line-height:1.8;
+}
+
+.delivery-details{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin:50px 0;
+
+    flex-wrap:wrap;
+}
+
+.detail{
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+    padding:18px 28px;
+
+    border-radius:50px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:17px;
+}
+
+.call-button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    background:#C8842C;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:20px 45px;
+
+    border-radius:60px;
+
+    font-size:1.5rem;
+
+    font-weight:700;
+
+    transition:.35s;
+}
+
+.call-button:hover{
+
+    background:#D99743;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 20px 45px rgba(201,132,44,.35);
+}
+
+@media(max-width:768px){
+
+.delivery{
+
+padding:90px 24px;
+
+}
+
+.delivery-details{
+
+flex-direction:column;
+
+}
+
+.call-button{
+
+width:100%;
+
+justify-content:center;
+
+font-size:1.2rem;
+
+}
+
+}

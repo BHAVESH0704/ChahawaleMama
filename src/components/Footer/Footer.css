@@ -1,0 +1,94 @@
+.footer{
+
+    background:#1D120D;
+
+    color:white;
+
+    padding:70px 8% 30px;
+}
+
+.footer-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:70px;
+
+    flex-wrap:wrap;
+}
+
+.footer-brand{
+
+    max-width:400px;
+}
+
+.footer-brand h2{
+
+    font-family:"Yatra One",serif;
+
+    font-size:2rem;
+
+    color:#FFF8EE;
+
+    margin-bottom:20px;
+}
+
+.footer-brand p{
+
+    color:rgba(255,255,255,.75);
+
+    line-height:1.8;
+}
+
+.footer-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+}
+
+.footer-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    color:#FFF8EE;
+}
+
+.footer-item a{
+
+    color:white;
+
+    text-decoration:none;
+}
+
+.footer-bottom{
+
+    margin-top:50px;
+
+    border-top:1px solid rgba(255,255,255,.1);
+
+    padding-top:25px;
+
+    text-align:center;
+
+    color:rgba(255,255,255,.55);
+}
+
+@media(max-width:768px){
+
+.footer-container{
+
+flex-direction:column;
+
+gap:40px;
+
+}
+
+}

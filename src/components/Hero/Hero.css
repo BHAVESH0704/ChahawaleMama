@@ -1,0 +1,333 @@
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+
+  animation: heroZoom 2s ease forwards;
+}
+
+/* ==========================================
+   HERO OVERLAY
+========================================== */
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  padding: 160px 8% 80px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(12, 8, 5, 0.88) 0%,
+    rgba(18, 12, 8, 0.58) 38%,
+    rgba(0, 0, 0, 0.10) 100%
+  );
+}
+
+/* ==========================================
+   HERO CONTENT
+========================================== */
+
+.hero-content {
+  max-width: 640px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  color: #ffffff;
+}
+
+/* ==========================================
+   BADGE
+========================================== */
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 10px 20px;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: #d4a24c;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 26px;
+}
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.hero-title {
+  font-family: "Yatra One", serif;
+
+  font-size: clamp(5.2rem, 7vw, 7rem);
+
+  line-height: 0.95;
+
+  font-weight: 400;
+
+  letter-spacing: 0.5px;
+
+  color: #fff8ee;
+
+  margin-bottom: 18px;
+
+  text-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+.hero-title span {
+  display: block;
+
+  margin-top: 8px;
+
+  color: #d4a24c;
+}
+
+/* ==========================================
+   SUBTITLE
+========================================== */
+
+.hero-subtitle {
+  font-size: 1.35rem;
+
+  font-weight: 500;
+
+  color: #e3b160;
+
+  letter-spacing: 0.3px;
+
+  margin-bottom: 18px;
+}
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.hero-description {
+  max-width: 540px;
+
+  font-size: 1.08rem;
+
+  line-height: 1.85;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  margin-bottom: 38px;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+
+  margin-top: 8px;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 190px;
+
+  padding: 16px 34px;
+
+  border-radius: 999px;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: all 0.35s ease;
+}
+
+.primary-btn {
+  background: #c7842c;
+
+  color: white;
+
+  box-shadow: 0 12px 30px rgba(199, 132, 44, 0.35);
+}
+
+.primary-btn:hover {
+  transform: translateY(-4px);
+
+  background: #d99642;
+
+  box-shadow: 0 20px 40px rgba(199, 132, 44, 0.45);
+}
+
+.secondary-btn {
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  color: white;
+}
+
+.secondary-btn:hover {
+  background: white;
+
+  color: #2e1b10;
+
+  transform: translateY(-4px);
+}
+
+/* ==========================================
+   TRUST FEATURES
+========================================== */
+
+.hero-features {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 28px;
+
+  margin-top: 36px;
+}
+
+.hero-feature {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  color: rgba(255, 255, 255, 0.92);
+
+  font-size: 15px;
+
+  font-weight: 500;
+}
+
+.hero-feature svg {
+  color: #d4a24c;
+
+  font-size: 18px;
+}
+
+/* ==========================================
+   HERO ZOOM
+========================================== */
+
+@keyframes heroZoom {
+  from {
+    background-size: 108%;
+  }
+
+  to {
+    background-size: 100%;
+  }
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 992px) {
+  .hero {
+    background-position: 72% center;
+  }
+
+  .hero-overlay {
+    padding: 140px 6% 60px;
+  }
+
+  .hero-title {
+    font-size: clamp(4rem, 8vw, 5.6rem);
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+  .hero {
+    background-position: center;
+  }
+
+  .hero-overlay {
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 120px 24px 50px;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+
+  .hero-badge {
+    margin-bottom: 22px;
+  }
+
+  .hero-title {
+    font-size: 3.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.15rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .hero-features {
+    justify-content: center;
+
+    gap: 18px;
+
+    margin-top: 28px;
+  }
+}
